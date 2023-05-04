@@ -24,7 +24,7 @@
     }
 
  */
-    .swiper-pagination {
+     .swiper-pagination {
 	position: absolute;
     margin:0 auto;
 	top: 10px;
@@ -32,16 +32,16 @@
 	width: auto !important;
 	left: auto !important;
 	margin: 0;
+    
 }
 .swiper-pagination-bullet {
 	padding: 5px 10px;
-	border-radius: 0;
+	border-radius: initial;
 	width: 30px;
 	height: 30px;
 	text-align: center;
 	line-height: 30px;
 	font-size: 12px;
-	/* color:#000; */
 	opacity: 1;
 	background: rgb(133, 203, 237);
     
@@ -51,9 +51,6 @@
     background-image: url(logo-nhs-dark.webp);
     background-size:contain;
     background-repeat: auto;
-    /* opacity:1; */
-    
-    
 }
 .swiper-pagination-bullet:nth-child(2){
     background-image: url(logo-bobcat-light.webp);
@@ -81,22 +78,26 @@
 	color:#fff;
 	background:yellow;
     box-shadow: 1px 1px 0.2 2 rgb(84, 176, 130);
-}
+} 
+
+
+
+
 
 
 </style>
 </head>
 <body class="">
-    <div class="swiper swipercontainer  mySwiper  ">
+    <div class="swiper swipercontainer  mx-auto  mySwiper  ">
         <div class="swiper-wrapper mt-20">
             <div class="swiper-slide swiper-slide-active" >
-                <div class="w-[1000px]">
+                <div class="">
                     <ul>
                         <li class="max-w-xl relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-gray-900 via-gray-800 to">
                             <img class=" bg-contain" src="bg-bobcat.webp" alt="">
                             
                                 <div class="px-5 absolute mt-bobcat top-0 ">
-                                    <img src="../assets/thumbnail/logo-bobcat-light.webp" alt="">
+                                    <img src="logo-bobcat-light.webp" alt="">
                                     <div class="mt-10">
                                         <p class="text-white">Bobcat leveraged Ionic to developed a comprehensive, multi-faceted, and seamless app to elevate and transform the Bobcat user experience.</p>
                                         <button class="text-white whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
@@ -111,13 +112,13 @@
                 </div>
             </div>
             <div class="swiper-slide swiper-slide-active" >
-                <div class="w-[1000px]">
+                <div class="">
                     <ul>
                         <li class="max-w-xl relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-gray-900 via-gray-800 to">
                             <img class=" bg-contain" src="bg-bobcat.webp" alt="">
                             
                                 <div class="px-5 absolute mt-bobcat top-0 ">
-                                    <img src="../assets/thumbnail/logo-bobcat-light.webp" alt="">
+                                    <img src="logo-bobcat-light.webp" alt="">
                                     <div class="mt-10">
                                         <p class="text-white">Bobcat leveraged Ionic to developed a comprehensive, multi-faceted, and seamless app to elevate and transform the Bobcat user experience.</p>
                                         <button class="text-white whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
@@ -132,13 +133,13 @@
                 </div>
             </div>
             <div class="swiper-slide swiper-slide-active" >
-                <div class="w-[1000px]">
+                <div class="">
                     <ul>
                         <li class="max-w-xl relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-gray-900 via-gray-800 to">
                             <img class=" bg-contain" src="bg-bobcat.webp" alt="">
                             
                                 <div class="px-5 absolute mt-bobcat top-0 ">
-                                    <img src="../assets/thumbnail/logo-bobcat-light.webp" alt="">
+                                    <img src="logo-bobcat-light.webp" alt="">
                                     <div class="mt-10">
                                         <p class="text-white">Bobcat leveraged Ionic to developed a comprehensive, multi-faceted, and seamless app to elevate and transform the Bobcat user experience.</p>
                                         <button class="text-white whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
@@ -153,13 +154,13 @@
                 </div>
             </div>
             <div class="swiper-slide swiper-slide-active" >
-                <div class="w-[1000px]">
+                <div class="">
                     <ul>
                         <li class="max-w-xl relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-gray-900 via-gray-800 to">
                             <img class=" bg-contain" src="bg-bobcat.webp" alt="">
                             
                                 <div class="px-5 absolute mt-bobcat top-0 ">
-                                    <img src="../assets/thumbnail/logo-bobcat-light.webp" alt="">
+                                    <img src="logo-bobcat-light.webp" alt="">
                                     <div class="mt-10">
                                         <p class="text-white">Bobcat leveraged Ionic to developed a comprehensive, multi-faceted, and seamless app to elevate and transform the Bobcat user experience.</p>
                                         <button class="text-white whitespace-nowrap bg-slate-600 px-5 py-1 rounded-full mt-5">See all of our Case Studies <i class="fa-solid fa-arrow-right-long"></i></button>
@@ -174,7 +175,7 @@
                 </div>
             </div>
             <div class="swiper-slide swiper-slide-active" >
-                <div class="w-[1000px]">
+                <div class="">
                     <ul>
                         <li class="max-w-xl relative h-96 rounded-3xl bg-contain overflow-hidden  bg-gradient-to-t from-gray-900 via-gray-800 to">
                             <img class=" bg-contain" src="bg-bobcat.webp" alt="">
@@ -199,12 +200,13 @@
         </div>
 
         <div class="swiper-pagination"></div>
+        </div>
         
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script>
             var swiper = new Swiper(".mySwiper", {
-              slidesPerView: "auto",
-              spaceBetween:150,
+              slidesPerView:2,
+              spaceBetween:50,
               centeredSlides:true,
                 grabCursor:true,
               loop: true,
@@ -212,6 +214,19 @@
    delay: 3000,
    disableOnInteraction:false
  },
+ breakpoints:{
+        0:{
+            slidesPerView: 1.1,
+            spaceBetween:50,
+      centeredSlides:true,
+        },
+        640:{
+            slidesPerView: 2,
+            spaceBetween:50,
+      centeredSlides:true,
+        }
+        
+      },
             pagination: {
           el: ".swiper-pagination",
           clickable: true,
